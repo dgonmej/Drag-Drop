@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(248, 227, 203);
+}
+
+/* CABECERA */
+
+#cabecera {
+  padding: 20px;
+  background-color: rgb(231, 153, 64);
+  background-image: url("../img/header-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  border-bottom: solid rgb(201, 111, 9) 4px;
+}
+
+#cabecera #logo {
+  margin: 0 auto;
+  font-family: fantasy;
+  font-size: 5em;
+  text-shadow: 2px 2px 2px black;
+  color: rgb(185, 71, 19);
+}
+
+#cabecera #enlaces {
+  margin: 40px auto 0 auto;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 2em;
+  text-align: right;
+  color: rgb(185, 71, 19);
+}
+
+#cabecera #enlaces .enlace {
+  margin: 0 10px;
+  color: rgb(185, 71, 19);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+#cabecera #enlaces .enlace:hover {
+  color: rgb(100, 35, 5);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* CONTENIDO */
+
+#contenido {
+  margin: 30px 0 50px 0;
+  padding: 20px;
+  background-color: rgb(248, 227, 203);
+
+  text-align: center;
+}
+
+.ayuda {
+  margin: 5px 0 20px 20px;
+  color: rgb(201, 111, 9);
+  text-align: left;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px rgb(37, 36, 36);
+  font-weight: bold;
+  font-size: 1.8em;
+}
+
+#materiales {
+  padding: 0 1% 1%;
+}
+
+.materiales.custom-state-active {
+  background: #eee;
+}
+
+.materiales li {
+  float: left;
+  width: 100px;
+  padding: 0.4em;
+  margin: 0.4em;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px black;
+  transition: 0.2s box-shadow;
+}
+
+.materiales li:hover {
+  box-shadow: 6px 6px 10px black;
+}
+
+.materiales li h5 {
+  margin: 0 0 0.4em;
+  padding: 4px;
+  color: rgb(201, 111, 9);
+  cursor: move;
+}
+
+.materiales li a {
+  float: right;
+}
+
+.materiales li a.ui-icon-zoomin {
+  float: left;
+}
+
+.materiales li img {
+  width: 100%;
+  cursor: move;
+}
+
+.contenedor-profesiones {
+  border: solid rgb(201, 111, 9) 4px;
+  border-radius: 10px;
+  background-color: rgb(243, 170, 111);
+  margin-top: 20px;
+  padding: 20px 10px 40px 10px;
+  text-align: center;
+}
+
+.profesion {
+  /* float: left; */
+  display: inline-block;
+  border-radius: 5px;
+  width: 22%;
+  min-height: 30vh;
+  padding: 0.5%;
+  margin: 1%;
+  box-shadow: 5px 5px 8px black;
+}
+
+.profesion h4 {
+  /* line-height: 16px; */
+  text-align: left;
+  margin: 0 0 0.4em;
+  padding: 2%;
+}
+
+.profesion h4 .ui-icon {
+  float: left;
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 10px;
+}
+
+.profesion .materiales h5 {
+  display: none;
+}
+
+#carpintero h4 .ui-icon {
+  background-image: url("../img/profesiones/carpintero.svg");
+  background-position: center;
+}
+
+#cocinero h4 .ui-icon {
+  background-image: url("../img/profesiones/cocinero.svg");
+}
+
+#pescador h4 .ui-icon {
+  background-image: url("../img/profesiones/pescador.svg");
+}
+
+#programador h4 .ui-icon {
+  background-image: url("../img/profesiones/programador.svg");
+}
+
+/* PIE */
+
+#pie {
+  padding: 20px;
+  background-color: rgb(231, 153, 64);
+
+  text-align: center;
+  border-top: solid rgb(201, 111, 9) 4px;
+}
+
+#pie p {
+  text-align: right;
+  font-size: 1.4em;
+}
+
+#pie p #autor {
+  font-weight: bold;
+}
+
+/* VENTANA DE BIENVENIDA */
+
+label,
+input {
+  display: inline-block;
+}
+
+.oculto {
+  display: none;
+}
+
+p.textoLabel {
+  color: dimgray;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+p .usuario {
+  text-transform: capitalize;
+  font-style: italic;
+}
+
+input.text {
+  margin-bottom: 12px;
+  width: 95%;
+  padding: 0.4em;
+}
+
+input[type="radio"] {
+  margin-left: 10px;
+}
+
+fieldset {
+  padding: 0;
+  border: 0;
+  margin-top: 25px;
+}
+
+.ui-dialog-buttonset button {
+  padding: 5px 10px;
+}
+
+.ui-dialog .ui-dialog-title {
+  font-size: 1.4em;
+  text-transform: uppercase;
+}
+
+.ui-dialog .ui-state-error {
+  padding: 0.3em;
+}
+
+.validacion {
+  border: 1px solid transparent;
+  padding: 0.3em;
+}
+
+#dificultad p,
+#victoria p {
+  display: none;
+  margin-top: 20px;
+}
+
+.ui-wrapper {
+  margin: 0 !important;
+  padding: 0 !important;
+  
+}
+
+#name {
+  margin: 0;
+}

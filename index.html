@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    <title>Profesiones Drag&Dro</title>
+
+    <!-- CSS EXTERNO -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" media="screen" rel="stylesheet" type="text/css"
+    />
+
+    <!-- CSS PROPIO -->
+    <link rel="stylesheet" href="./css/estilo.css">
+
+    <!-- JS EXTERNO -->
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+
+    <!-- JS PROPIO -->
+    <script src="./js/script.js"></script>
+</head>
+
+<body>
+    <header id="cabecera">
+        <h1 id="logo">Profesiones Drag&Drop</h1>
+        <div id="enlaces">
+            <a href="#" id="a" class="enlace">
+                <span class="glyphicon glyphicon-user"></span>
+                <span class="usuario">Usuario</span>
+            </a>
+            <a href="#" id="cambiar" class="enlace">
+                <span class="glyphicon glyphicon-log-out"></span> Cambiar</a>
+        </div>
+    </header>
+    <main id="contenido">
+        <div class="ui-widget ui-helper-clearfix">
+            <h2 class="ayuda">Materiales</h2>
+            <ul id="materiales" class="materiales ui-helper-reset ui-helper-clearfix">
+                <li class="ui-widget-content ui-corner-tr material-1">
+                    <h5 class="ui-widget-header">Clavos</h5>
+                    <img src="img/materiales/carpintero-clavos.png" alt="Clavos de carpintero" class="carpintero" width="100" height="75">
+                    <a href="img/materiales/carpintero-clavos.png" title="Ampliar imagen" class="ui-icon ui-icon-zoomin">Ampliar</a>
+                </li>
+                <li class="ui-widget-content ui-corner-tr material-2">
+                    <h5 class="ui-widget-header">Caldero</h5>
+                    <img src="img/materiales/cocinero-caldero.png" alt="Caldero de cocina" class="cocinero" width="100" height="75">
+                    <a href="img/materiales/cocinero-caldero.png" title="Ampliar imagen" class="ui-icon ui-icon-zoomin">Ampliar</a>
+                </li>
+                <li class="ui-widget-content ui-corner-tr material-3">
+                    <h5 class="ui-widget-header">Anzuelo</h5>
+                    <img src="img/materiales/pescador-anzuelo.png" alt="Anzuelo" class="pescador" width="100" height="75">
+                    <a href="img/materiales/pescador-anzuelo.png" title="Ampliar imagen" class="ui-icon ui-icon-zoomin">Ampliar</a>
+                </li>
+                <li class="ui-widget-content ui-corner-tr material-4">
+                    <h5 class="ui-widget-header">Google</h5>
+                    <img src="img/materiales/programador-google.png" alt="Logo de google" class="programador" width="100" height="75">
+                    <a href="img/materiales/programador-google.png" title="Ampliar imagen" class="ui-icon ui-icon-zoomin">Ampliar</a>
+                </li>
+
+                <li class="ui-widget-content ui-corner-tr material-5">
+                    <h5 class="ui-widget-header">Madera</h5>
+                    <img src="img/materiales/carpintero-madera.png" alt="Tablones de madera" class="carpintero" width="100" height="75">
+                    <a href="img/materiales/carpintero-madera.png" title="Ampliar imagen" class="ui-icon ui-icon-zoomin">Ampliar</a>
+                </li>
+                <li class="ui-widget-content ui-corner-tr material-6">
+                    <h5 class="ui-widget-header">Cubiertos</h5>
+                    <img src="img/materiales/cocinero-cubiertos.png" alt="Curbiertos de cocina" class="cocinero" width="100" height="75">
+                    <a href="img/materiales/cocinero-cubiertos.png" title="Ampliar imagen" class="ui-icon ui-icon-zoomin">Ampliar</a>
+                </li>
+                <li class="ui-widget-content ui-corner-tr material-7">
+                    <h5 class="ui-widget-header">Caña</h5>
+                    <img src="img/materiales/pescador-caña.png" alt="Caña de pescar" class="pescador" width="100" height="75">
+                    <a href="img/materiales/pescador-caña.png" title="Ampliar imagen" class="ui-icon ui-icon-zoomin">Ampliar</a>
+                </li>
+                <li class="ui-widget-content ui-corner-tr material-8">
+                    <h5 class="ui-widget-header">Portátil</h5>
+                    <img src="img/materiales/programador-portátil.png" alt="Ordenador portátil" class="programador" width="100" height="75">
+                    <a href="img/materiales/programador-portátil.png" title="Ampliar imagen" class="ui-icon ui-icon-zoomin">Ampliar</a>
+                </li>
+
+                <li class="ui-widget-content ui-corner-tr material-9">
+                    <h5 class="ui-widget-header">Martillo</h5>
+                    <img src="img/materiales/carpintero-martillo.png" alt="Martillo" class="carpintero" width="100" height="75">
+                    <a href="img/materiales/carpintero-martillo.png" title="Ampliar imagen" class="ui-icon ui-icon-zoomin">Ampliar</a>
+                </li>
+                <li class="ui-widget-content ui-corner-tr material-10">
+                    <h5 class="ui-widget-header">Gorro</h5>
+                    <img src="img/materiales/cocinero-gorro.png" alt="Gorro de chef" class="cocinero" width="100" height="75">
+                    <a href="img/materiales/cocinero-gorro.png" title="Ampliar imagen" class="ui-icon ui-icon-zoomin">Ampliar</a>
+                </li>
+                <li class="ui-widget-content ui-corner-tr material-11">
+                    <h5 class="ui-widget-header">Carrete</h5>
+                    <img src="img/materiales/pescador-carrete.png" alt="Carrete de caña" class="pescador" width="100" height="75">
+                    <a href="img/materiales/pescador-carrete.png" title="Ampliar imagen" class="ui-icon ui-icon-zoomin">Ampliar</a>
+                </li>
+
+                <li class="ui-widget-content ui-corner-tr material-12">
+                    <h5 class="ui-widget-header">Ratón</h5>
+                    <img src="img/materiales/programador-ratón.png" alt="Ratón de ordenadro" class="programador" width="100" height="75">
+                    <a href="img/materiales/programador-ratón.png" title="Ampliar imagen" class="ui-icon ui-icon-zoomin">Ampliar</a>
+                </li>
+
+                <li class="ui-widget-content ui-corner-tr material-13">
+                    <h5 class="ui-widget-header">Metro</h5>
+                    <img src="img/materiales/carpintero-metro.png" alt="Cinta métrica" class="carpintero" width="100" height="75">
+                    <a href="img/materiales/carpintero-metro.png" title="Ampliar imagen" class="ui-icon ui-icon-zoomin">Ampliar</a>
+                </li>
+                <li class="ui-widget-content ui-corner-tr material-14">
+                    <h5 class="ui-widget-header">Sartén</h5>
+                    <img src="img/materiales/cocinero-sartén.png" alt="Sartén de cocina" class="cocinero" width="100" height="75">
+                    <a href="img/materiales/cocinero-sartén.png" title="Ampliar imagen" class="ui-icon ui-icon-zoomin">Ampliar</a>
+                </li>
+                <li class="ui-widget-content ui-corner-tr material-15">
+                    <h5 class="ui-widget-header">Cebo</h5>
+                    <img src="img/materiales/pescador-cebo.png" alt="Cebo" class="pescador" width="100" height="75">
+                    <a href="img/materiales/pescador-cebo.png" title="Ampliar imagen" class="ui-icon ui-icon-zoomin">Ampliar</a>
+                </li>
+                <li class="ui-widget-content ui-corner-tr material-16">
+                    <h5 class="ui-widget-header">Teclado</h5>
+                    <img src="img/materiales/programador-teclado.png" alt="Teclado de ordenador" class="programador" width="100" height="75">
+                    <a href="img/materiales/programador-teclado.png" title="Ampliar imagen" class="ui-icon ui-icon-zoomin">Ampliar</a>
+                </li>
+            </ul>
+
+            <div id="bienvenida" title="¿Quién eres?">
+                <p class="validacion">Especifica el nombre de usuario.</p>
+                <form>
+                    <fieldset>
+                        <label for="name">
+                            <p class="textoLabel">Usuario:</p>
+                        </label>
+                        <input type="text" name="name" id="name" placeholder="Ejemplo: Diego Gonzalez" class="text ui-widget-content ui-corner-all">
+
+                        <!-- Allow form submission with keyboard without duplicating the dialog button -->
+                        <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+                    </fieldset>
+                </form>
+            </div>
+
+            <div id="dificultad" title="¿Dificultad?">
+                <p class="textoLabel">
+                    <span class="usuario"></span>, ¿Nivel de dificultad?</p>
+            </div>
+
+            <div id="victoria" title="¡Has ganado!">
+                <p class="textoLabel">Has conseguido: <span id="puntuacion"></span> puntos.</p>
+                <p class="textoLabel">¿Quieres volver a intentarlo?</p>
+            </div>
+
+            <div class="contenedor-profesiones">
+                <h2 class="ayuda">Profesiones</h2>
+                <div id="carpintero" class="ui-widget-content ui-state-default profesion">
+                    <h4 class="ui-widget-header">
+                        <span class="ui-icon"></span> Carpintero</h4>
+                </div>
+
+                <div id="cocinero" class="ui-widget-content ui-state-default profesion">
+                    <h4 class="ui-widget-header">
+                        <span class="ui-icon">Cocinero</span> Cocinero</h4>
+                </div>
+
+                <div id="pescador" class="ui-widget-content ui-state-default profesion">
+                    <h4 class="ui-widget-header">
+                        <span class="ui-icon"></span> Pescador</h4>
+                </div>
+
+                <div id="programador" class="ui-widget-content ui-state-default profesion">
+                    <h4 class="ui-widget-header">
+                        <span class="ui-icon"></span> Programador</h4>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div id="users-contain" class="ui-widget">
+            <h1>Datos:</h1>
+            <h2 id="dificultad"></h2>
+        </div>
+        <button id="create-user">Crear usuario</button> -->
+    </main>
+    <footer id="pie">
+        <p>&copy; 2018
+            <span id="autor"> Diego González</span>
+        </p>
+    </footer>
+
+</body>
+
+</html>
